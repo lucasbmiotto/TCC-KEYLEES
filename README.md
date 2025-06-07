@@ -26,4 +26,4 @@ O projeto tem como objetivo permitir que usuários tenham controle total sobre s
 
 ## 🎓 Projeto acadêmico
 
-Este projeto faz parte do Trabalho de Conclusão de Curso (TCC) de Ciência da Computação no Instituto Mauá de Tecnologia — 2024.
+Este projeto faz parte do Trabalho de Conclusão de Curso (TCC) de Ciência da Computação no Instituto Mauá de Tecnologia — 2024..
