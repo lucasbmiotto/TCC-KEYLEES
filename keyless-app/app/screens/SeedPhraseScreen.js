@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import { saveSeed } from '../utils/Storage'; 
 
 const generateSeed = () => {
   const words = [];
@@ -14,7 +15,9 @@ export default function SeedPhraseScreen({ navigation, route }) {
   const [seed, setSeed] = useState('');
 
   useEffect(() => {
-    setSeed(generateSeed());
+    const generated = generateSeed();
+    setSeed(generated);
+    saveSeed(generated); // Salva a seed de palavras no armazenamento
   }, []);
 
   const handleContinue = () => {

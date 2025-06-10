@@ -6,6 +6,10 @@ import CreateWalletScreen from '../screens/CreateWalletScreen';
 import SeedPhraseScreen from '../screens/SeedPhraseScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import LoginScreen from '../screens/LoginScreen';
+import HomePageScreen from '../screens/HomePageScreen';
+import SignInScreen from '../screens/SignInScreen';
+import ShareScreen from '../screens/ShareScreen';
+import QRCodeScreen from '../screens/QRCodeScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +21,10 @@ export default function StackNavigator() {
       <Stack.Screen name="SeedPhrase" component={SeedPhraseScreen} />
       <Stack.Screen name="Welcome" component={WelcomeScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Home" component={HomePageScreen} />
+      <Stack.Screen name="SignIn" component={SignInScreen} />
+      <Stack.Screen name="Share" component={ShareScreen} />
+      <Stack.Screen name="QRCode" component={QRCodeScreen} />
     </Stack.Navigator>
   );
 }
