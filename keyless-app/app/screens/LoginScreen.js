@@ -21,8 +21,7 @@ export default function LoginScreen({ navigation }) {
   const handleLogin = () => {
     if (password === storedPassword && seed === storedSeed) {
       Alert.alert('Login OK', 'Autenticado com sucesso');
-      // Aqui você pode navegar pra próxima tela
-      // navigation.replace('HomeScreen'); ou similar
+      navigation.replace('Home');
     } else {
       Alert.alert('Erro', 'Senha ou frase de segurança incorretos');
     }
