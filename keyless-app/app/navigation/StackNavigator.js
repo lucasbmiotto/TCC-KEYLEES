@@ -10,6 +10,10 @@ import HomePageScreen from '../screens/HomePageScreen';
 import SignInScreen from '../screens/SignInScreen';
 import ShareScreen from '../screens/ShareScreen';
 import QRCodeScreen from '../screens/QRCodeScreen';
+import WalletActionsScreen from '../screens/WalletActionsScreen';
+import KeyScreen from '../screens/KeyScreen';
+import DeleteScreen from '../screens/DeleteScreen';
+import DownloadWalletScreen from '../screens/WalletBackup';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +29,10 @@ export default function StackNavigator() {
       <Stack.Screen name="SignIn" component={SignInScreen} />
       <Stack.Screen name="Share" component={ShareScreen} />
       <Stack.Screen name="QRCode" component={QRCodeScreen} />
+      <Stack.Screen name="WalletAction" component={WalletActionsScreen} />
+      <Stack.Screen name="Key" component={KeyScreen} />
+      <Stack.Screen name="DeleteScreen" component={DeleteScreen} />
+      <Stack.Screen name="WalletBackup" component={DownloadWalletScreen} />
     </Stack.Navigator>
   );
 }

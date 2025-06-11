@@ -19,7 +19,7 @@ export default function HomePageScreen({ navigation }) {
       <View style={styles.buttons}>
         <Button title="CADASTRAR" onPress={() => navigation.navigate('SignIn')} />
         <Button title="COMPARTILHAR" onPress={() => navigation.navigate('Share')} />
-        <Button title="CONFIGURAÇÕES" onPress={() => navigation.navigate('Pagina3')} />
+        <Button title="CONFIGURAÇÕES" onPress={() => navigation.navigate('WalletAction')} />
       </View>
     </View>
   );
